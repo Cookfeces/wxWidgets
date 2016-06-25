@@ -2420,6 +2420,7 @@ class WXDLLIMPEXP_FWD_CORE wxScrollBar;
 #define wxSTC_CSKY_CHARACTER 12
 #define wxSTC_CSKY_STRINGEOL 13
 #define wxSTC_CSKY_EXTINSTRUCTION 14
+#define wxSTC_CSKY_PREPROCESSOR 15
 
 //}}}
 //----------------------------------------------------------------------
