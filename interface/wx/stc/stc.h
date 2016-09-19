@@ -505,6 +505,8 @@
 #define wxSTC_LEX_IHEX 118
 #define wxSTC_LEX_TEHEX 119
 #define wxSTC_LEX_CSKY 120
+#define wxSTC_LEX_DISASM 120
+
 
 /// When a lexer specifies its language as SCLEX_AUTOMATIC it receives a
 /// value assigned in sequence from SCLEX_AUTOMATIC+1.
@@ -2377,6 +2379,26 @@
 #define wxSTC_CSKY_STRINGEOL 13
 #define wxSTC_CSKY_EXTINSTRUCTION 14
 #define wxSTC_CSKY_PREPROCESSOR 15
+
+/// Lexical states for SCLEX_DISASSEMBLE
+#define wxSTC_DISASM_DEFAULT 0
+#define wxSTC_DISASM_COMMENT 1
+#define wxSTC_DISASM_NUMBER 2
+#define wxSTC_DISASM_STRING 3
+#define wxSTC_DISASM_OPERATOR 4
+#define wxSTC_DISASM_IDENTIFIER 5
+#define wxSTC_DISASM_CPUINSTRUCTION 6
+#define wxSTC_DISASM_MATHINSTRUCTION 7
+#define wxSTC_DISASM_REGISTER 8
+#define wxSTC_DISASM_DIRECTIVE 9
+#define wxSTC_DISASM_DIRECTIVEOPERAND 10
+#define wxSTC_DISASM_COMMENTLINE 11
+#define wxSTC_DISASM_CHARACTER 12
+#define wxSTC_DISASM_STRINGEOL 13
+#define wxSTC_DISASM_EXTINSTRUCTION 14
+#define wxSTC_DISASM_PREPROCESSOR 15
+#define wxSTC_DISASM_START 16
+
 
 //}}}
 

@@ -321,6 +321,7 @@ WXSCINTILLA_OBJECTS =  \
 	wxscintilla_LexVisualProlog.o \
 	wxscintilla_LexYAML.o \
 	wxscintilla_LexCsky.o \
+	wxscintilla_LexDisasm.o \
 	wxscintilla_Accessor.o \
 	wxscintilla_CharacterCategory.o \
 	wxscintilla_CharacterSet.o \
@@ -15423,7 +15424,10 @@ wxscintilla_LexYAML.o: $(srcdir)/src/stc/scintilla/lexers/LexYAML.cxx
 	
 wxscintilla_LexCsky.o: $(srcdir)/src/stc/scintilla/lexers/LexCsky.cxx
 	$(CXXC) -c -o $@ $(WXSCINTILLA_CXXFLAGS) $(srcdir)/src/stc/scintilla/lexers/LexCsky.cxx
-
+	
+wxscintilla_LexDisasm.o: $(srcdir)/src/stc/scintilla/lexers/LexDisasm.cxx
+	$(CXXC) -c -o $@ $(WXSCINTILLA_CXXFLAGS) $(srcdir)/src/stc/scintilla/lexers/LexDisasm.cxx
+	
 wxscintilla_Accessor.o: $(srcdir)/src/stc/scintilla/lexlib/Accessor.cxx
 	$(CXXC) -c -o $@ $(WXSCINTILLA_CXXFLAGS) $(srcdir)/src/stc/scintilla/lexlib/Accessor.cxx
 

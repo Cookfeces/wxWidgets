@@ -55,7 +55,7 @@ static inline bool IsAsmOperator(const int ch) {
 	return false;
 }
 
-bool IsSpaceEquiv(int state) {
+static bool IsSpaceEquiv(int state) {
 	return (state == SCE_CSKY_COMMENT) ||
 		   (state == SCE_CSKY_COMMENTLINE);
 }
